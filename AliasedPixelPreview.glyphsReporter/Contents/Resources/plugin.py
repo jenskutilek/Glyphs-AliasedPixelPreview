@@ -39,8 +39,8 @@ class AliasedPixelPreview(ReporterPlugin):
         font = layer.font()
         step = font.upm // 18
         halfstep = step // 2
-        for y in range(1200 // step, -400 // step, -1):
-            for x in range(0, int(layer.width // step)):
+        for y in range(-400 // step, 1200 // step + step):
+            for x in range(0, int(layer.width // step) + step):
                 if outline.containsPoint_((x * step + halfstep, y * step + halfstep)):
                     NSBezierPath.fillRect_(
                         NSRect(origin=(x * step, y * step), size=(step, step))
