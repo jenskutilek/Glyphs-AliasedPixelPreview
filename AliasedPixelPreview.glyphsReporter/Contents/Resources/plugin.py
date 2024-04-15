@@ -37,7 +37,7 @@ class AliasedPixelPreview(ReporterPlugin):
         NSColor.colorWithCalibratedRed_green_blue_alpha_(*PIXEL_COLOR).set()
         outline = layer.completeBezierPath
         font = layer.font()
-        step = font.upm // 18
+        step = font.upm // int(Glyphs.defaults.get("PixelPreviewPixel", 18))
         halfstep = step // 2
         for y in range(-400 // step, 1200 // step + step):
             for x in range(0, int(layer.width // step) + step):
