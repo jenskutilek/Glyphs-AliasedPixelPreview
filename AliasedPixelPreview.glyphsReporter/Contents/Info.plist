@@ -17,11 +17,11 @@
 	<key>CFBundleVersion</key>
 	<string>1</string> <!-- 123 -->
 	<key>UpdateFeedURL</key>
-	<string>____OnlineUrlToThisPlist____</string>
+	<string>https://raw.githubusercontent.com/jenskutilek/Glyphs-AliasedPixelPreview/refs/heads/main/AliasedPixelPreview.glyphsReporter/Contents/Info.plist</string>
 	<key>productPageURL</key>
-	<string>____ProductPageURL____</string>
+	<string>https://github.com/jenskutilek/Glyphs-AliasedPixelPreview</string>
 	<key>productReleaseNotes</key>
-	<string>____LatestReleaseNotes____</string>
+	<string>Initial release</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright, Jens Kutilek, 2024</string>
 	<key>NSPrincipalClass</key>
